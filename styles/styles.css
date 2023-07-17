@@ -7,7 +7,7 @@
 }
 
 /* :root{
-    --color: primary;
+    color: --#18191F;
 } */
 /* nav section */
 nav {
@@ -73,17 +73,112 @@ h3 {
     margin-left: 10px;
 }
 
-/* Influencer company */
-.Influencer-company {
+/* Influencer service */
+.Influencer-service {
     margin: 30px 165px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+/* Popular Collection */
+
+.Popular-content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.Popular-box-container {
+    margin: 30px 200px;
+    width: 300px;
+    height: 440px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 5px;
+}
+
+.Popular-box-container>img {
+    width: 300px;
+    height: 256px;
+
+}
+
+.popular-description {
+    color: #787885;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.title {
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.popular-container {
+    display: grid;
+
+}
+
+/* product section */
+.products-container {
+    margin: 50px 165px;
+    display: flex;
+}
+
+.product-title {
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.product-content {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.btn-primary-button {
+    padding: 10px 12px;
+    background: #E02C6D;
+    color: white;
+    border: wheat;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* footer section */
+.footer-section {
+    background: #0A0826;
+    height: 300px;
+}
+
+.white {
+    text-align: center;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.copyright {
+    text-align: center;
+    color:  #D9DBE1;
+    font-size: 14px;
+    font-weight: 700;
+}
+.footer-content{
+    padding: 30px;
+}
+.clear{
+    text-align: center;
+    gap: 10px;
+}
+
 @media screen and (max-width: 576px) {
     nav {
         flex-direction: column-reverse;
+        margin: 20px 10px;
     }
 
     .Influencer-container,
@@ -93,14 +188,33 @@ h3 {
         margin: 0 auto;
     }
 
-    .Influencer-container div {
+    .Influencer-container div,
+    .products-container div {
         text-align: center;
+        font-size: 17px;
     }
 
-    .Influencer-company,
+    .Influencer-service,
     .img {
         flex-direction: column;
         gap: 18px;
     }
+
+    .products-container,
+    .img {
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 20px;
+        margin: 0 auto;
+    }
+
+    nav ul li {
+        justify-content: center;
+    }
+    .Popular-box-container{
+        margin: 5px 5px;
+        margin: 0 auto
+    }
+
 
 }
